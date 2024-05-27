@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Define the document type as HTML -->
+
+<html lang="en">
+<!-- Start of HTML document with English language -->
+
+<head>
+    <!-- Start of head section -->
+    <meta charset="UTF-8">
+    <!-- Set character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configure viewport for responsive design -->
+    <title>Register - Food Ordering System</title>
+    <!-- Set title of the page -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to external CSS file for styling -->
+</head>
+
+<body>
+    <!-- Start of body section -->
+    <div id="auth-container">
+        <!-- Container for authentication related content -->
+        <h2>Register</h2>
+        <!-- Title for registration section -->
+        <form id="registerForm">
+            <!-- Registration form -->
+            <input type="text" id="registerName" placeholder="Name" required>
+            <!-- Input field for name with placeholder and required attribute -->
+            <input type="password" id="registerPassword" placeholder="Password" required>
+            <!-- Input field for password with placeholder and required attribute -->
+            <select id="registerRole">
+                <!-- Dropdown select for role -->
+                <option value="admin">Admin</option>
+                <!-- Option for admin role -->
+                <option value="customer">Customer</option>
+                <!-- Option for customer role -->
+            </select>
+            <!-- End of select element -->
+            <button type="submit">Register</button>
+            <!-- Button to submit registration form -->
+        </form>
+        <!-- End of registration form -->
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+        <!-- Link to login page -->
+    </div>
+    <!-- End of authentication container -->
+    <script src="script.js"></script>
+    <!-- Script file for client-side JavaScript -->
+</body>
+<!-- End of body section -->
+
+</html>
+<!-- End of HTML document -->

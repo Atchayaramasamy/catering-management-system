@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!-- Define the document type as HTML -->
+
+<html lang="en">
+<!-- Start of HTML document with English language -->
+
+<head>
+    <!-- Start of head section -->
+    <meta charset="UTF-8">
+    <!-- Set character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configure viewport for responsive design -->
+    <title>Admin Menu - Food Ordering System</title>
+    <!-- Set title of the page -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to external CSS file for styling -->
+</head>
+
+<body>
+    <!-- Start of body section -->
+    <div id="menu-container">
+        <!-- Container for menu related content -->
+        <h2>Admin Menu</h2>
+        <!-- Title for admin menu section -->
+        <table id="menuTable">
+            <!-- Table to display menu items -->
+            <thead>
+                <!-- Table header -->
+                <tr>
+                    <!-- Table row for header -->
+                    <th>Item Name</th>
+                    <!-- Table header for item name -->
+                    <th>Price</th>
+                    <!-- Table header for price -->
+                    <th>Action</th>
+                    <!-- Table header for action -->
+                </tr>
+                <!-- End of table row for header -->
+            </thead>
+            <!-- End of table header -->
+            <tbody></tbody>
+            <!-- Table body for menu items -->
+        </table>
+        <!-- End of menu table -->
+    </div>
+    <!-- End of menu container -->
+    <script src="script.js"></script>
+    <!-- Script file for client-side JavaScript -->
+    <script>
+        // JavaScript code to execute after DOM content is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            // Callback function to display admin menu
+            displayMenu(true);
+        });
+    </script>
+    <!-- End of script for DOMContentLoaded event -->
+</body>
+<!-- End of body section -->
+
+</html>
+<!-- End of HTML document -->

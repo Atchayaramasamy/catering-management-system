@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Root element of the Maven POM (Project Object Model) file -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<!-- POM model version -->
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Parent project details for Spring Boot -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>3.2.5</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<!-- Project group ID -->
+	<groupId>com.eurekaServer</groupId>
+	<!-- Project artifact ID -->
+	<artifactId>eurekaServer</artifactId>
+	<!-- Project version -->
+	<version>0.0.1-SNAPSHOT</version>
+	<!-- Project name -->
+	<name>eurekaServer</name>
+	<!-- Project description -->
+	<description>Project implementing catering management system using eurekaserver</description>
+
+	<!-- Properties for Java version and Spring Cloud version -->
+	<properties>
+		<java.version>17</java.version>
+		<spring-cloud.version>2023.0.1</spring-cloud.version>
+	</properties>
+
+	<!-- Project dependencies -->
+	<dependencies>
+		<!-- Dependency for Eureka client support -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+
+		<!-- Dependency for Eureka server support -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+		</dependency>
+
+		<!-- Dependency for Spring Boot testing support -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<!-- Dependency management section to import Spring Cloud dependencies -->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<!-- Build configuration for Maven -->
+	<build>
+		<plugins>
+			<!-- Plugin for Spring Boot support in Maven -->
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>

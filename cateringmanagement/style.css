@@ -1,0 +1,147 @@
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif; /* Set font family */
+    background-color: #f0f8ff; /* Set background color */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Auth container styles */
+#auth-container {
+    background-color: #fff; /* Set background color */
+    padding: 2em; /* Add padding */
+    border-radius: 8px; /* Add border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    width: 400px; /* Set container width */
+    text-align: center; /* Center align text */
+}
+
+#auth-container h2 {
+    margin-bottom: 1em; /* Add margin bottom */
+    color: #333; /* Set text color */
+}
+
+#auth-container form {
+    display: flex; /* Use flexbox for form layout */
+    flex-direction: column; /* Arrange form elements in a column */
+}
+
+#auth-container input, #auth-container select, #auth-container button {
+    margin-bottom: 1em; /* Add margin bottom */
+    padding: 0.5em; /* Add padding */
+    border: 1px solid #ddd; /* Add border */
+    border-radius: 4px; /* Add border radius */
+    font-size: 1em; /* Set font size */
+}
+
+#auth-container input, #auth-container select {
+    background-color: #f9f9f9; /* Set background color */
+}
+
+#auth-container button {
+    background-color: #28a745; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Set cursor to pointer */
+    transition: background-color 0.3s ease; /* Add transition */
+}
+
+#auth-container button:hover {
+    background-color: #218838; /* Change background color on hover */
+}
+
+/* Menu and order summary container styles */
+#menu-container, #order-summary-container {
+    background-color: #fff; /* Set background color */
+    padding: 2em; /* Add padding */
+    border-radius: 8px; /* Add border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    margin-bottom: 2em; /* Add margin bottom */
+    width: 80%; /* Set container width */
+}
+
+#menu-container h2, #order-summary-container h2 {
+    margin-bottom: 1em; /* Add margin bottom */
+    color: #333; /* Set text color */
+    text-align: center; /* Center align text */
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Set table width to 100% */
+    border-collapse: collapse; /* Collapse table borders */
+    margin-bottom: 1em; /* Add margin bottom */
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Add border */
+}
+
+th, td {
+    padding: 1em; /* Add padding */
+    text-align: left; /* Left align text */
+}
+
+th {
+    background-color: #007bff; /* Set background color */
+    color: #fff; /* Set text color */
+}
+
+td {
+    background-color: #f9f9f9; /* Set background color */
+}
+
+td button {
+    background-color: #ffc107; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    padding: 0.5em 1em; /* Add padding */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Set cursor to pointer */
+    transition: background-color 0.3s ease; /* Add transition */
+}
+
+td button:hover {
+    background-color: #e0a800; /* Change background color on hover */
+}
+
+.hidden {
+    display: none; /* Hide element */
+}
+
+/* Footer styles */
+footer {
+    text-align: center; /* Center align text */
+    padding: 1em; /* Add padding */
+    background-color: #007bff; /* Set background color */
+    color: #fff; /* Set text color */
+    position: fixed; /* Fix position */
+    width: 100%; /* Set width to 100% */
+    bottom: 0; /* Align to bottom */
+}
+
+/* Text alignment styles */
+.text-center {
+    text-align: center; /* Center align text */
+}
+
+.text-right {
+    text-align: right; /* Right align text */
+}
+
+.text-left {
+    text-align: left; /* Left align text */
+}
+
+/* Text bold styles */
+.text-bold {
+    font-weight: bold; /* Set font weight to bold */
+}
+
+.hidden {
+    display: none; /* Hide element */
+}

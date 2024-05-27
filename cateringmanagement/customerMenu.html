@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- Define the document type as HTML -->
+
+<html lang="en">
+<!-- Start of HTML document with English language -->
+
+<head>
+    <!-- Start of head section -->
+    <meta charset="UTF-8">
+    <!-- Set character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Configure viewport for responsive design -->
+    <title>Customer Menu - Food Ordering System</title>
+    <!-- Set title of the page -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to external CSS file for styling -->
+</head>
+
+<body>
+    <!-- Start of body section -->
+    <div id="menu-container">
+        <!-- Container for menu related content -->
+        <h2>Customer Menu</h2>
+        <!-- Title for customer menu section -->
+        <table id="menuTable">
+            <!-- Table to display menu items -->
+            <thead>
+                <!-- Table header -->
+                <tr>
+                    <!-- Table row for header -->
+                    <th>Item Name</th>
+                    <!-- Table header for item name -->
+                    <th>Price</th>
+                    <!-- Table header for price -->
+                    <th>Action</th>
+                    <!-- Table header for action -->
+                </tr>
+                <!-- End of table row for header -->
+            </thead>
+            <!-- End of table header -->
+            <tbody></tbody>
+            <!-- Table body for menu items -->
+        </table>
+        <!-- End of menu table -->
+        <button id="submitOrder" class="hidden">Submit Order</button>
+        <!-- Button to submit order (initially hidden) -->
+    </div>
+    <!-- Order summary container -->
+    <div id="order-summary-container" class="hidden">
+        <!-- Container for order summary related content (initially hidden) -->
+        <h2>Order Summary</h2>
+        <!-- Title for order summary section -->
+        <table id="orderSummaryTable">
+            <!-- Table to display order summary -->
+            <thead>
+                <!-- Table header -->
+                <tr>
+                    <!-- Table row for header -->
+                    <th>Item Name</th>
+                    <!-- Table header for item name -->
+                    <th>Quantity</th>
+                    <!-- Table header for quantity -->
+                    <th>Unit Price</th>
+                    <!-- Table header for unit price -->
+                    <th>Total Price</th>
+                    <!-- Table header for total price -->
+                    <th>Action</th>
+                    <!-- Table header for action -->
+                </tr>
+                <!-- End of table row for header -->
+            </thead>
+            <!-- End of table header -->
+            <tbody></tbody>
+            <!-- Table body for order summary -->
+        </table>
+        <!-- End of order summary table -->
+        <div id="totalAmountContainer"></div>
+        <!-- Container for total order amount -->
+        <button id="confirmOrder">Confirm Order</button>
+        <!-- Button to confirm order -->
+    </div>
+    <!-- End of order summary container -->
+
+    <script src="script.js"></script>
+    <!-- Script file for client-side JavaScript -->
+    <script>
+        // JavaScript code to execute after DOM content is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            // Callback function to display customer menu
+            displayMenu(false);
+        });
+
+        // Event listener for submit order button
+        document.getElementById('submitOrder').addEventListener('click', handleSubmitOrder);
+        // Event listener for confirm order button
+        document.getElementById('confirmOrder').addEventListener('click', handleConfirmOrder);
+    </script>
+    <!-- End of script for DOMContentLoaded event -->
+</body>
+<!-- End of body section -->
+
+</html>
+<!-- End of HTML document -->
